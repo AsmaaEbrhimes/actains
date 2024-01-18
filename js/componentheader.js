@@ -7,7 +7,7 @@ class HEADERCOMPONENTS extends HTMLElement {
         <i class="fa-solid fa-bars bars"></i>
             <div class="content-headre">
                 <ul class="list-header">
-                    <a href="../html/index.html"><h1>ACTAN</h1></a>
+                    <a href="index.html"><h1>ACTAN</h1></a>
                     <li class="li-shopping"><a href=""><i class="fa-solid fa-cart-shopping shopping"></i></a>
                     <span class='length'></span>
                         <div class="content-shopping">

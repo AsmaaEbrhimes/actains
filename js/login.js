@@ -9,7 +9,7 @@ sign.addEventListener('submit', (e) => {
     let password = localStorage.getItem('password');
 
     if (login_email.value === email && login_password.value === password) {
-        window.location = '../html/index.html';
+        window.location = 'index.html';
     } else {
         if (login_email.value !== email) {
             showAllert('من فضلك ادخل الايميل بشكل صحيح');

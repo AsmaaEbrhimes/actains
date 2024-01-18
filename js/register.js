@@ -17,7 +17,7 @@ sign_up.addEventListener('submit', (e) => {
 
     if (match_username && match_email && match_password) {
         SaveDataUser()
-        window.location = '../html/index.html';
+        window.location = 'index.html';
 
         fetch("https://sendmail-api-docs.vercel.app/api/send", {
             method: "POST",
