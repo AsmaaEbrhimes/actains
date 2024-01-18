@@ -1,0 +1,509 @@
+.favourite-dress {
+    position: fixed;
+    background-color: rgb(246, 246, 246);
+    left: 30px;
+    top: 40px;
+    border-radius: 10px;
+    width: 20%;
+    z-index: 111;
+    display: none;
+}
+
+.done-product {
+    background-color: #eee;
+    border-radius: 7px;
+    position: fixed;
+    padding: 10px;
+    margin-left: 10px;
+    width: 300px;
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+
+.product-cart {
+    background-color: #eee;
+    position: fixed;
+    width: 300px;
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    display: none;
+}
+
+.product-cart .desc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-cart img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+.product-cart button {
+    text-align: center;
+    display: block;
+    margin: auto;
+    width: 100%;
+    color: white;
+    background-color: black;
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.product-cart button:hover {
+    opacity: 0.8;
+}
+
+.block {
+    display: block;
+}
+
+.favourite-dress .content {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.favourite-dress .content img {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+}
+
+.favourite-dress p {
+    font-size: 15px;
+    position: relative;
+    top: -30px;
+    width: 200px;
+}
+
+.favourite-dress p a {
+    color: blue;
+    line-height: 2;
+}
+
+.content-prands-product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+    background-color: #eee;
+    padding: 20px;
+
+
+}
+
+.content-prands-product .card {
+    display: flex;
+    align-items: center;
+
+}
+
+.content-prands-product .card i {
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+.content-myproduct {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.content-myproduct .card-1 {
+    width: 60%;
+}
+
+.content-product {
+    text-align: right;
+    border-top: 1px solid rgb(240, 236, 236);
+    padding: 20px;
+    margin-top: 20px;
+    border-bottom: 1px solid rgb(240, 236, 236);
+}
+
+.content-product p {
+    margin-top: 10px;
+}
+
+.content-myproduct .card-1 p.point {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.content-myproduct .card-1 .size {
+    text-align: right;
+
+}
+
+.content-myproduct .card-1 .size span {
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 5px;
+    border-radius: 50%;
+    border: 1px solid black;
+    padding: 10px;
+    transition: 0.5s linear;
+}
+
+.content-myproduct .card-1 .size span:hover {
+    background-color: black;
+    color: white;
+}
+
+.content-myproduct .card-1 .product-dress {
+    text-align: right;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.content-myproduct .card-1 .product-dress span:nth-child(1) {
+    display: inline-block;
+    color: red;
+    border: 1px solid red;
+    padding: 10px;
+    border-radius: 4px;
+    transition: 0.5s linear;
+    cursor: pointer;
+}
+
+.product-dress .heart {
+    position: relative;
+}
+
+
+
+
+.content-myproduct .card-1 .product-dress span.shoppingbag button {
+    display: inline-block;
+    border: none;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.content-myproduct .card-1 .product-dress span.shoppingbag i {
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.add-number input {
+    position: relative;
+    width: 50px;
+    height: 40px;
+    padding: 2px;
+    font-size: 15px;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    border: 1px solid #ccc;
+}
+
+.add-number span p i {
+    position: relative;
+    top: -37px;
+    background-color: #eee;
+    cursor: pointer;
+    display: inline-block;
+    padding: 1px;
+}
+
+.add-number span p i:hover {
+    background-color: #ccc
+}
+
+.content-myproduct .card-1 .product-dress span:nth-child(1):hover {
+    background-color: red;
+    color: white;
+}
+
+.content-myproduct .card-1 img {
+    height: 200px;
+    width: 150px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.content-myproduct .card-1 .product-dress .social {
+    display: flex;
+    position: relative;
+    top: -30px;
+}
+
+.content-myproduct .card-1 .product-dress .social i {
+    margin-left: 10px;
+    padding: 6px;
+    border-radius: 10px;
+
+    font-size: 25px;
+
+}
+
+.content-myproduct .card-1 .product-dress .social i.facebook {
+    color: white;
+    border: 1px solid blue;
+    background-color: blue;
+}
+
+.content-myproduct .card-1 .product-dress .social i.twitter {
+    color: white;
+    background-color: rgb(58, 189, 240);
+    border: 1px solid rgb(84, 190, 232);
+}
+
+
+.content-myproduct .card-1 .product-dress .social i.whatsapp {
+    color: white;
+    background-color: green;
+    border: 1px solid green;
+}
+
+.card-1 .sale {
+    margin-top: 20px;
+    display: flex;
+
+}
+
+.card-1 .sale .tamara {
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.card-1 .sale p {
+    margin-left: 10px;
+}
+
+
+.content-myproduct .card-2 {
+    width: 40%;
+}
+
+.content-myproduct .card-2 .content {
+    display: flex;
+}
+
+.content-myproduct .card-2 .content .main img {
+    height: 500px;
+    width: 350px;
+    margin-right: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.content-myproduct .content-main {
+    display: block;
+
+}
+
+.content-myproduct .card-2 p {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.content-myproduct .card-2 .content-main img {
+    height: 160px;
+    width: 100px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.whatsapplink {
+    position: relative;
+    top: -10px;
+}
+
+.overlay-img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.862);
+    transform: scale(0);
+    transition: 0.5s linear;
+}
+
+.action-width-img {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.action-width-img button {
+    font-size: 17px;
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    line-height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    border: none;
+    text-align: center;
+}
+
+.close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    text-align: right;
+}
+
+.overlay-img span {
+    font-size: 20px;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    display: block;
+
+    text-align: center;
+    background: white;
+    border-radius: 50%;
+
+}
+
+.scale {
+    transform: scale(1);
+}
+
+.overlay-img .main-overlay {
+    width: 400px;
+    height: 500px;
+    margin: auto;
+    display: block;
+    margin-top: 10px;
+}
+
+.child-img {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.child-img img {
+    width: 100px;
+    height: 100px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+
+
+
+
+@media(min-width:320px) and (max-width:767px) {
+    .content-prands-product .card {
+        position: relative;
+        margin-top: 30px;
+    }
+
+    .content-myproduct .card-2 .content .main img {
+        position: relative;
+        width: 100px !important;
+        height: 150px !important;
+        left: -50px;
+        top: 50px !important;
+        bottom: 50px !important;
+    }
+
+    .content-main {
+        position: relative;
+        width: 100px;
+        right: 180px !important;
+        top: 200px;
+    }
+}
+
+@media(min-width:768px) and (max-width:1200px) {
+    .content-myproduct .card-2 .content .main img {
+        width: 250px !important;
+        height: 350px !important;
+    }
+
+    .content-main {
+        position: relative;
+        width: 100px;
+        right: 180px !important;
+        display: flex;
+        flex-direction: row !important;
+        top: 360px;
+    }
+
+    .content-main img {
+        width: 140px !important;
+        height: 120px !important;
+    }
+}
+
+@media(min-width:1200px) and (max-width:1400px) {
+    .card-2 .content {
+        flex-direction: column;
+        padding: 40px;
+    }
+
+    .content-myproduct .card-2 .content .main img {
+        position: relative;
+        margin-top: 10px;
+        width: 400px !important;
+    }
+
+    .content-main {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+
+    .content-main img {
+        width: 125px !important;
+    }
+}
+
+@media(min-width:320px) and (max-width:530px) {
+    .content-myproduct .card-2 .content .main img {
+        width: 80px;
+    }
+
+    .card-1 .content-product h1 {
+        width: 100px;
+        font-size: 15px;
+    }
+
+    .content-main {
+        display: flex;
+        flex-direction: row;
+        top: 250px;
+        position: relative;
+        right: 120px;
+    }
+
+
+    .card-1 .second {
+        position: relative;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width:767px) {
+    .overlay-img img {
+        position: relative;
+        top: 10px;
+    }
+   
+}

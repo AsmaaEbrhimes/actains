@@ -1,0 +1,189 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.858);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.box-login {
+    position: relative;
+    width: 350px;
+    height: 390px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.box-login::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 350px;
+    height: 100%;
+    animation: filter 6s linear infinite;
+}
+
+.box-login::after {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 350px;
+    height: 390px;
+    transform-origin: bottom right;
+    background: linear-gradient(45deg, red, blue);
+    animation: filter 6s linear infinite;
+    transition-delay: -3s;
+}
+
+
+@keyframes filter {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+.box-login .sign {
+    position: absolute;
+    inset: 2px;
+    z-index: 999;
+
+    border-radius: 10px;
+    padding: 30px;
+    width: 350px;
+    background-color: black;
+}
+
+.box-login .sign button {
+    border: none;
+    text-align: center;
+    display: block !important;
+    color: aquamarine;
+    text-shadow: 0 0 5px aquamarine;
+    margin: auto;
+    margin-bottom: 20px;
+    background-color: transparent;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.box-login .sign input {
+    display: block;
+    background-color: transparent;
+    margin-bottom: 10px;
+    width: 100%;
+    border: none;
+    padding: 10px;
+    border-bottom: 1px solid white;
+    transition: 0.5s linear;
+}
+
+.box-login .sign input:focus {
+    background-color: white;
+    border-radius: 7px;
+    outline: none;
+}
+
+.box-login .sign .check-login {
+    position: relative;
+    margin-bottom: 30px;
+    top: 50px;
+}
+
+.box-login .sign .check-login span {
+    position: relative;
+
+    display: block;
+    color: white;
+    font-size: 20px;
+    top: -50px;
+    padding: 5px;
+    pointer-events: none;
+    transition: 0.5s linear;
+}
+
+.box-login .sign .check-login input:focus~span {
+    pointer-events: none;
+    display: block;
+    position: relative;
+    top: -90px;
+    font-size: 13px;
+}
+
+.box-login .sign input[type="submit"] {
+    background-color: lawngreen;
+    box-shadow: 0 0 70px lawngreen;
+    padding: 10px;
+    display: block;
+    border: none;
+    font-size: 20px;
+    border-radius: 7px;
+    position: relative;
+    top: 30px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s linear;
+}
+
+.link {
+    margin-top: 20px;
+}
+
+.link a button {
+
+    display: block;
+    border: none;
+    padding: 10px;
+    background-color: darkmagenta;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 20px darkmagenta,
+        0 0 30px darkmagenta,
+        0 0 40px darkmagenta;
+        cursor: pointer;
+}
+.allert{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: white;
+    background-color: rgb(237, 107, 107);
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+}
+.block{
+    display: block;
+}
+.errors.login-email,
+.errors.login-password {
+    color: red;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .box-login {
+        position: relative;
+        height: 550px;
+    }
+}
