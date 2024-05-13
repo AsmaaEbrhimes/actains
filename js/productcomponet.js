@@ -30,7 +30,8 @@ class PRODUCTCOMPONAENT extends HTMLElement {
             <div class="show-product">
             </div>
             <div class="information-product">
-                <h3>التصفيه حسب</h3>
+            <h3>التصفيه حسب</h3>
+               
                 <div class="price">
                     <p><i onclick="showprice(this)" class="fa-solid fa-plus"></i>السعر</p>
                     <div class="range">

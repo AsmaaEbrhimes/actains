@@ -54,6 +54,8 @@
 
 .show-product .card p {
     text-align: center;
+    margin: auto;
+    display: block;
     margin-top: 2px;
 }
 
@@ -216,8 +218,24 @@
     .range {
         width: 300px;
     }
+    .price{
+        text-align: center;
+        margin: auto;
+        display: block;
+    }
     .information-product{
-        order: -1
+        order: -1;
+        display: block;
+        text-align: center;
+    }
+    .information-product h3{
+       
+        width: 100%;
+
+        text-align: center;
+        margin: auto;
+        display: block;
+
     }
     .content-product {
         flex-direction: column;
@@ -249,11 +267,19 @@
     }
 
     .show-product {
-        flex-direction: column;
+        display: flex;
+        /* flex-direction: column; */
     }
 
-    .show-product img {
-        width: 300px;
+    .show-product .card{
+        width: 100%;
+       
+    }
+
+    .show-product img { 
+        margin: auto;
+        display: block;
+        text-align: center;
     }
 
 }
@@ -273,6 +299,7 @@
     .content-product {
         flex-direction: column;
     }
+
 }
 
 @media(min-width:1200px) and (max-width:1400px){

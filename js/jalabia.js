@@ -1,13 +1,13 @@
 let show_product = document.querySelector('.show-product')
 let data = JSON.parse(localStorage.getItem('jalabia'));
-window.onload=()=>{
+window.onload = () => {
     document.querySelector('.range').classList.add('accordion')
     document.querySelector('.content-size .content').classList.add('Accordion')
 
 }
 
 
-const lodingSppiner=()=>{
+const lodingSppiner = () => {
     let loading_overlay = document.querySelector('.loading-overlay')
     loading_overlay.classList.add('block')
     setTimeout(() => {
@@ -43,7 +43,7 @@ const displayData = (data) => {
 
 function savedIdImgGalabeat(id) {
     localStorage.setItem('idjalabia', id)
-    window.location='../html/myjalabia.html'
+    window.location = '../html/myjalabia.html'
 }
 
 function showSize(element) {
@@ -109,7 +109,7 @@ function Selecttype(params) {
         localStorage.setItem('jalabia', JSON.stringify(data));
         lodingSppiner()
         displayData(revers);
-       
+
     }
     if (value === 'الاسم من ي-أ') {
         let sorted = data.sort((a, b) => a.order - b.order);

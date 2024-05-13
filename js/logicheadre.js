@@ -47,7 +47,7 @@ contentShopping.addEventListener('mouseleave', () => {
 })
 
 const SearchproductShopping = () => {
-    fetch('./js/api.json')
+    fetch('../../js/api.json')
         .then(res => res.json())
         .then(data => {
             displaySearchResults(data[0]['فساتين'])
