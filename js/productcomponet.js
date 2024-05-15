@@ -26,14 +26,15 @@ class PRODUCTCOMPONAENT extends HTMLElement {
 <section>
 <div class="product">
     <div class="container">
+    <div class="grid">
         <div class="content-product">
             <div class="show-product">
             </div>
+
             <div class="information-product">
             <h3>التصفيه حسب</h3>
-               
                 <div class="price">
-                    <p><i onclick="showprice(this)" class="fa-solid fa-plus"></i>السعر</p>
+                    <p class="flex_prise"><i onclick="showprice(this)" class="fa-solid fa-plus"></i>السعر</p>
                     <div class="range">
                         <div class="content-range">
                             <div class="progress"></div>
@@ -44,18 +45,23 @@ class PRODUCTCOMPONAENT extends HTMLElement {
                         </div>
                     </div>
                 </div>
+
+
+
                 <div class="size">
-                    <p class="title-size"><i onclick="showSize(this)" class="fa-solid fa-plus"></i> المقاس</p>
+                    <p class="title-size"><i onclick="showSize(this)" class="fa-solid fa-plus"></i><span>المقاس<span/></p>
                     <div class="content-size">
-                        <div class="content">
-                            <p><span>S</span><input onchange="SelectSize(this)" type="checkbox"></p>
-                            <p><span>M</span><input onchange="SelectSize(this)" type="checkbox"></p>
-                            <p><span>L</span><input onchange="SelectSize(this)" type="checkbox"></p>
-                            <p><span>XL</span><input onchange="SelectSize(this)" type="checkbox"></p>
+                        <div class="content_size_input content">
+                            <p class="flex_inputsize"><span>S</span><input onchange="SelectSize(this)" type="checkbox"></p>
+                            <p class="flex_inputsize"><span>M</span><input onchange="SelectSize(this)" type="checkbox"></p>
+                            <p class="flex_inputsize"><span>L</span><input onchange="SelectSize(this)" type="checkbox"></p>
+                            <p class="flex_inputsize"><span>XL</span><input onchange="SelectSize(this)" type="checkbox"></p>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+
         </div>
     </div>
 </div>

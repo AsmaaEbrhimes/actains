@@ -1,44 +1,47 @@
-
-
-.alera-vavorite{
+.alera-vavorite {
     background-color: aqua;
     padding: 15px;
-text-align: center;   
-font-size: 20px;
-display: none;
+    text-align: center;
+    font-size: 20px;
+    display: none;
 }
-.block{
+
+.block {
     display: block;
 }
-.favourite .content{
-display: flex;
-align-items: center;
 
-justify-content: space-between;
+.favourite .content {
+    display: flex;
+    justify-content: space-between;
 }
-.content-favourite img{
+
+.content-favourite img {
     width: 100px;
     margin-top: 30px;
     border-radius: 10px;
 }
-.control-user{
+
+.control-user {
+    top:0;
     width: 30%;
     padding: 30px;
     border-radius: 10px;
- background-color: #eee;
- width: 200px;
- height: 350px;
- margin-bottom: 20px;
- margin-top: 20px;
+    background-color: #eee;
+    width: 200px;
+    height: 350px;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
-.control-user .control{
+
+.control-user .control {
     text-align: center;
     background-color: black;
     color: white;
     padding: 5px;
     border-radius: 4px;
 }
-.control-user a{
+
+.control-user a {
     position: relative;
     display: block;
     border-radius: 5px;
@@ -50,9 +53,9 @@ justify-content: space-between;
 
 }
 
-.control-user p.out{
+.control-user p.out {
     cursor: pointer;
-background-color: black;
+    background-color: black;
     text-align: center;
     padding: 5px;
     position: relative;
@@ -62,7 +65,7 @@ background-color: black;
     transition: 0.5s linear;
 }
 
-.is-btn-loding::before{
+.is-btn-loding::before {
     content: "";
     position: absolute;
     top: 0;
@@ -83,7 +86,8 @@ background-color: black;
 
     animation: loder 0.9s linear infinite;
 }
-.is-btn-loding::after{
+
+.is-btn-loding::after {
     position: absolute;
     content: "";
     top: 0;
@@ -94,20 +98,24 @@ background-color: black;
 }
 
 @keyframes loder {
-    0%{
+    0% {
         transform: rotate(0deg);
     }
-    100%{
+
+    100% {
         transform: rotate(360deg);
     }
 }
-.control-user p.out:hover{
-  background-color: darkgoldenrod;
+
+.control-user p.out:hover {
+    background-color: darkgoldenrod;
 }
-.contentFavouriteproduct{
+
+.contentFavouriteproduct {
     width: 85%;
 }
-.content-favourite{
+
+.content-favourite {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -117,66 +125,98 @@ background-color: black;
     padding: 20px;
     border-bottom: 1px solid rgb(233, 224, 224);
 }
-.content-favourite button{
+
+.content-favourite button {
     cursor: pointer;
     display: inline-block;
     border: none;
     color: white;
     padding: 10px;
-    background: linear-gradient(red ,orange );
+    background: linear-gradient(red, orange);
     border-radius: 10px;
     font-family: 'Rubik', sans-serif;
 }
 
-.img-header{
+.img-header {
     height: 400px;
-width: 100%;
+    width: 100%;
 }
 
-@media(min-width:320px) and (max-width:767px){
-    .favourite .content{
+@media(min-width:320px) and (max-width:767px) {
+    .favourite .content {
         display: flex;
         flex-direction: column;
+        justify-content: center;
     }
-    .img-header{
+
+    .img-header {
         margin-top: 15px;
     }
-    .control-user{
-        width: 400px;
-    }
-    .content-favourite{
-        position: relative;
-     border-bottom: none;
-     bottom: 20px;
-    }
-    .content-favourite img{
-display: block;
-width: 320px;
-margin-left: 40px;
 
+    .control-user {
+        width: 100%;
     }
-    .content-favourite p.salary{
+
+    .content-favourite {
+        position: relative;
+        border-bottom: none;
+        bottom: 20px;
         text-align: center;
+        display: block;
+        margin: auto;
+    }
+
+    .content-favourite img {
+        display: block;
+        margin: auto;
+        text-align: center;
+        width: 100%;
+        height: 350px;
+        margin-top: 30px;
+    }
+
+    .content-favourite p.salary {
+        text-align: center;
+        display: block;
         margin: auto;
         position: relative;
         top: 15px;
     }
-    .content-favourite p:nth-child(3){
+
+    .content-favourite p:nth-child(3) {
         position: relative;
         top: 25px;
     }
-    .content-favourite p:nth-child(4){
-      display: none;
+
+    .content-favourite p:nth-child(4) {
+        display: none;
     }
-    .content-favourite button{
+
+    .content-favourite button {
         position: relative;
         top: 40px;
-        margin:auto ;
+        margin: auto;
+        text-align: center;
+        display: block;
     }
 }
+@media(min-width:767px) and (max-width:1200px){
+    .favourite{
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+  
+}
 
-@media(min-width:1200px) and (max-width:1400px){
-  .content-favourite{
-      width: 100%;
-  }
+@media(min-width:1200px) and (max-width:1400px) {
+    .favourite{
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+    .content-favourite {
+        width: 100%;
+     
+    }
 }

@@ -12,6 +12,7 @@ body {
 html {
     scroll-behavior: smooth;
 }
+
 .swiper-button-next,
 .swiper-button-prev {
     cursor: pointer;
@@ -102,7 +103,7 @@ html {
 .new-modern {
     width: 100%;
     position: relative;
-    
+
 }
 
 .new-modern img {
@@ -136,31 +137,13 @@ html {
 
 footer {
     position: relative;
-    
+
 }
 
 .soial-footer {
     position: relative;
 }
 
-@media(max-width:767px) {
-    .offers .swiper-slide a img {
-        width: 75px;
-    }
-
-    .famous {
-        position: relative;
-        margin-top: 140px;
-    }
-
-    .famous .swiper-slide a img {
-        width: 50px;
-    }
-
-    .seles .swiper-slide a img {
-        width: 45px;
-    }
-}
 
 .load-fires {
     display: none;
@@ -186,7 +169,7 @@ footer {
 .load-fire h1 {
     color: #ffeb3b;
     -webkit-box-reflect: below -120px linear-gradient(transparent, #0008);
-    font-size: 16em;
+    font-size: 200px;
     filter: url(#fire);
     text-shadow: 0 0 10px #ff8c3b,
         0 0 40px #ff8c3b,
@@ -199,7 +182,8 @@ svg {
     height: 0;
     width: 0;
 }
-.parents{
+
+.parents {
     position: fixed;
     right: 40px;
     bottom: 30px;
@@ -209,30 +193,31 @@ svg {
     z-index: 110;
     border-radius: 50%;
     z-index: 111;
-    box-shadow: 0 0 10px white; 
+    box-shadow: 0 0 10px white;
 }
+
 .efect {
-  background-color: #ff8c3b;
-    position: relative; 
+    background-color: #ff8c3b;
+    position: relative;
     z-index: 111;
     border-radius: 50%;
     width: 100px;
     height: 100px;
     border: none;
     text-align: center;
-    line-height: 100px; 
+    line-height: 100px;
     top: 15px;
     left: 15px;
     cursor: pointer;
     box-shadow: 0 0 10px white;
     box-shadow: 0 0 10px #ff8c3b,
-    0 0 20px #ff8c3b,
-    0 0 30px #ff8c3b,
-    0 0 50px #ff8c3b
+        0 0 20px #ff8c3b,
+        0 0 30px #ff8c3b,
+        0 0 50px #ff8c3b
 }
+
 .efect::before,
-.efect::after
- {
+.efect::after {
     content: "";
     position: absolute;
     top: 50%;
@@ -245,8 +230,7 @@ svg {
 }
 
 .parents::before,
-.parents::after
- {
+.parents::after {
     content: "";
     position: absolute;
     top: 50%;
@@ -258,11 +242,11 @@ svg {
     animation: flashing 6s infinite;
 }
 
-.efect::after
- {
+.efect::after {
     animation-delay: 0.5s;
 }
-.parents::after{
+
+.parents::after {
     animation-delay: 1s;
 }
 
@@ -312,20 +296,132 @@ svg {
     animation: totop 0.9s linear infinite;
 }
 
-@keyframes totop{
-    0%{
+@keyframes totop {
+    0% {
         top: 0;
     }
-    20%{
-        top:4px;
+
+    20% {
+        top: 4px;
     }
-    30%{
+
+    30% {
         top: 10px;
     }
-    40%{
+
+    40% {
         top: 13px
     }
-    50%{
+
+    50% {
         top: 20px;
     }
 }
+
+@media(max-width:767px) {
+    .offers .swiper-slide img {
+        max-width: 50%;
+    }
+
+    .new-modern {
+        top: -100px;
+    }
+
+    .offers .swiper-slide a img {
+        width: 75px;
+    }
+
+    .famous {
+        position: relative;
+        margin-top: 60px;
+    }
+
+    .famous .swiper-slide a img {
+        max-width: 15%;
+        height: 200px;
+    }
+
+    .seles .swiper-slide a img {
+        width: 20%;
+    }
+
+    .tamara {
+        top: -40px;
+    }
+
+    .seles {
+        top: -70px;
+    }
+}
+
+@media (min-width:320px) and (max-width:767px) {
+    .load-fire h1{
+        font-size: 100px;
+    }
+    .new-modern {
+        top: -100px;
+    }
+
+    .offers .swiper-slide a img {
+        width: 75px;
+    }
+
+    .famous {
+        position: relative;
+        margin-top: 60px;
+    }
+
+  
+
+    .seles .swiper-slide a img {
+        max-width:  11%;
+    }
+
+    .tamara {
+        top: -40px;
+    }
+
+    .seles {
+        top: -70px;
+    }
+   
+    
+    .offers .swiper-slide img {
+      width:  19%!important;
+        
+    }
+   
+
+    .seles .swiper-slide a img {
+        width: 40%;
+    }
+}
+
+
+@media (min-width:767px) and (max-width:1200px) {
+    .offers .swiper-slide img {
+        max-width: 19%;
+    }
+    .seles .swiper-slide a img {
+        width: 12%;
+    }
+    .famous .swiper-slide a img {
+        max-width: 16%;
+        height: 250px;
+    }
+}
+
+@media (min-width:1200px) and (max-width:1400px) {
+        .offers .swiper-slide img  {
+            max-width: 19%;
+            margin: auto;
+            text-align: center;
+        }
+        .famous .swiper-slide a img {
+            width: 32%;
+            height: 400px;
+        }
+        .seles .swiper-slide a img {
+            width: 13%;
+        }
+    }

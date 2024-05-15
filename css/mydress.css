@@ -82,13 +82,15 @@
 .favourite-dress p {
     font-size: 15px;
     position: relative;
-    top: -30px;
-    width: 200px;
+    top: -10px;
+    color: black;
+    
 }
 
 .favourite-dress p a {
     color: blue;
     line-height: 2;
+
 }
 
 .content-prands-product {
@@ -310,6 +312,10 @@
 
 }
 
+.img_product {
+    display: flex;
+}
+
 .content-myproduct .card-2 p {
     margin-right: 10px;
     font-size: 20px;
@@ -404,106 +410,131 @@
 
 
 
-
-
 @media(min-width:320px) and (max-width:767px) {
+    .favourite-dress{
+        width: 300px;
+    }
+   
     .content-prands-product .card {
-        position: relative;
-        margin-top: 30px;
+        margin-top: 20px;
     }
 
-    .content-myproduct .card-2 .content .main img {
-        position: relative;
-        width: 100px !important;
-        height: 150px !important;
-        left: -50px;
-        top: 50px !important;
-        bottom: 50px !important;
+    .content-myproduct .card-1 {
+        width: 100%;
+        text-align: right;
     }
 
-    .content-main {
-        position: relative;
+    .content-myproduct {
+        flex-direction: column;
+    }
+
+    .card-1 {
+        text-align: center;
+        margin: auto;
+        width: 100%;
+    }
+
+
+    .select_img {
+        display: flex;
+        justify-content: center;
+   
+    }
+
+    .card-1 img {
+    
+      border-radius: 10px;
+      display: block;
+    
+    }
+
+    .img_product .main img.mains {
         width: 100px;
-        right: 180px !important;
-        top: 200px;
+        height: 100px;
+    }
+
+    .img_product {
+        flex-direction: column;
+    }
+
+    .card-2 {
+        display: none;
+    }
+
+    .none {
+        display: none;
     }
 }
 
-@media(min-width:768px) and (max-width:1200px) {
-    .content-myproduct .card-2 .content .main img {
-        width: 250px !important;
-        height: 350px !important;
-    }
+@media(min-width:767px) and (max-width:1200px) {
 
-    .content-main {
+    .favourite-dress .content {
+        position: fixed;
+        width: 300px;
         position: relative;
-        width: 100px;
-        right: 180px !important;
-        display: flex;
-        flex-direction: row !important;
-        top: 360px;
+        border-radius: 10px;
+        background-color: #eee;
+        top: 0px;
+        left: -0px;
+        height:200px;
+
+     
+    }
+    .favourite-dress p {
+        font-size: 15px;
+        position: relative;
+        margin: auto;
+        text-align: center;
+        top: -130px;
+        width: 200px;
+        color: black;
+    }
+    .favourite-dress{
+        background-color: transparent;
     }
 
-    .content-main img {
-        width: 140px !important;
-        height: 120px !important;
+    .content-prands-product .card {
+        margin-top: 20px;
+    }
+
+    .img_product {
+        flex-direction: column;
+    }
+
+    .none {
+        display: none;
+    }
+
+    .main img {
+        max-width: 100%;
+        max-height: 400px;
+        display: block;
+    }
+
+
+    .img_product .content-main {
+        display: flex;
+        justify-content: space-around;
+        display: inline;
+        margin: auto;
+        text-align: center;
+        margin-top: 10px;
     }
 }
 
 @media(min-width:1200px) and (max-width:1400px) {
-    .card-2 .content {
+    .img_product {
         flex-direction: column;
-        padding: 40px;
     }
 
-    .content-myproduct .card-2 .content .main img {
-        position: relative;
+    .img_product .content-main {
+        display: flex;
+        justify-content: space-around;
+        display: inline;
+        margin: auto;
+        text-align: center;
         margin-top: 10px;
-        width: 400px !important;
-    }
-
-    .content-main {
-        position: relative;
-        display: flex;
-        flex-direction: row;
-        margin-top: 20px;
-        margin-left: 10px;
-    }
-
-    .content-main img {
-        width: 125px !important;
-    }
-}
-
-@media(min-width:320px) and (max-width:530px) {
-    .content-myproduct .card-2 .content .main img {
-        width: 80px;
-    }
-
-    .card-1 .content-product h1 {
-        width: 100px;
-        font-size: 15px;
-    }
-
-    .content-main {
-        display: flex;
-        flex-direction: row;
-        top: 250px;
-        position: relative;
-        right: 120px;
     }
 
 
-    .card-1 .second {
-        position: relative;
-        margin-top: 20px;
-    }
-}
-
-@media (max-width:767px) {
-    .overlay-img img {
-        position: relative;
-        top: 10px;
-    }
-   
 }

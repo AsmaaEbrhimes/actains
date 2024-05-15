@@ -46,7 +46,7 @@ function showProduct() {
                 </div>
                 <div class="card-2">
                     <div class="content">
-                        <p>الوان اخري</p>
+                        <p class="none">الوان اخري</p>
                         <div class="main">
                             <img onclick='showOverlayImg(this.src)' src="${fiendProduct.img}" alt=""class='mains'>
                         </div>
@@ -109,7 +109,7 @@ function AddtoCartdress(id) {
             localStorage.setItem('productclothes', JSON.stringify(array_product));
             showCartShopping()
             ShowProductCart();
-         
+
         }
     } else {
         return false;
@@ -183,36 +183,36 @@ const showProductWishlist = () => {
 const increaseNumber = () => {
     let inputNum = document.querySelector('.input_num');
     let value = parseInt(inputNum.value) + 1;
-    if(value > 0){
-    inputNum.value = value;
-    let cartProducts = JSON.parse(localStorage.getItem('productclothes'));
-    // البحث عن المنتج في سلة التسوق
-    let productIndex = cartProducts.findIndex((item) => item.id === fiendProduct.id);
+    if (value > 0) {
+        inputNum.value = value;
+        let cartProducts = JSON.parse(localStorage.getItem('productclothes'));
+        // البحث عن المنتج في سلة التسوق
+        let productIndex = cartProducts.findIndex((item) => item.id === fiendProduct.id);
 
-    if (productIndex !== -1) {
-        // إذا وجد المنتج، قم بتحديث qty
-        cartProducts[productIndex].qty = value;
+        if (productIndex !== -1) {
+            // إذا وجد المنتج، قم بتحديث qty
+            cartProducts[productIndex].qty = value;
+        }
+        // حفظ السلة مرة أخرى في localStorage
+        localStorage.setItem('productclothes', JSON.stringify(cartProducts));
+        showCartShopping();
     }
-    // حفظ السلة مرة أخرى في localStorage
-    localStorage.setItem('productclothes', JSON.stringify(cartProducts));
-    showCartShopping();
-}
-return false
+    return false
 }
 
 const decreseNumber = () => {
     let inputNum = document.querySelector('.input_num');
     let value = parseInt(inputNum.value) - 1;
-    if(value > 0){
-    inputNum.value = value;
-    let cartProduct = JSON.parse(localStorage.getItem('productclothes'));
-    let productIndex = cartProduct.findIndex((item) => item.id === fiendProduct.id);
-    if (productIndex !== -1) {
-        cartProduct[productIndex].qty = value;
+    if (value > 0) {
+        inputNum.value = value;
+        let cartProduct = JSON.parse(localStorage.getItem('productclothes'));
+        let productIndex = cartProduct.findIndex((item) => item.id === fiendProduct.id);
+        if (productIndex !== -1) {
+            cartProduct[productIndex].qty = value;
+        }
+        localStorage.setItem('productclothes', JSON.stringify(cartProduct));
+        showCartShopping();
     }
-    localStorage.setItem('productclothes', JSON.stringify(cartProduct));
-    showCartShopping();
-}
-return false
+    return false
 }
 

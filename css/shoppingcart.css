@@ -1,6 +1,7 @@
 .content-information-product {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 30px;
 }
 
 .choose-shopping {
@@ -36,7 +37,7 @@
 .content-information-product .cardtwo {
     width: 65%;
     position: relative;
-    margin-left: 30px;
+    /* margin-left: 30px; */
     top: 35px;
 }
 
@@ -115,244 +116,133 @@ i {
     cursor: pointer;
 }
 
-
 table {
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 40px;
 }
 
-th {
-    border-bottom: 1px solid #ddd;
-    border-top: 1px solid #ddd;
-    padding: 7px;
+
+
+
+.action_shopping{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.action_shopping .delete , .qty , .number-product-shopping{
     background-color: #eee;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 10px;
 }
 
-td {
-    border-bottom: 1px solid #ddd;
-    border-right: 1px solid #ddd;
+.action_shopping .icons i{
+    display: block;
+    background-color: #eee;
+
+}
+.tabel {
+    position: relative;
+    border: 1px solid #ff8c3b;
+    border-radius: 20px;
+}
+
+.flex_tabel {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  
 
 }
 
-.td-1 {
+.flex_tabel:not(:last-child){
+    border-bottom: 1px solid #ff8c3b;
+}
+
+.img_shopping {
+    width: 100px;
+    height: 100px;
+
+}
+
+.tabel .desc {
+    font-size: 20px;
     position: absolute;
 }
 
-.td-1 p {
-    position: relative;
-    border-bottom: 1px solid #ddd;
-    margin-bottom: 100px;
-    padding: 15px;
-    height: 100px;
-}
-
-.td-2 {
-    position: relative;
-}
-
-.td-2 p {
-    margin-bottom: 100px;
-    border-bottom: 1px solid #ddd;
-    height: 100px;
-    padding: 15px;
-}
-
-.td-3 {
-    position: relative;
-    text-align: top;
-}
-
-.td-3 div {
-    height: 90px;
-    margin-bottom: 100px;
-}
-
-.td-1,
-.td-2,
-.td-3,
-.postion {
-    vertical-align: top;
-    margin-bottom: 10px
-}
-
-.content-td {
-    height: 150px;
-    margin-bottom: 20px;
-    display: block;
-    padding: 10px;
-}
-
-td:nth-child(3) span:nth-child(1) {
-    background-color: #eee;
-    padding: 10px;
-    border-radius: 5px;
-    margin-left: 4px;
-}
-
-td:nth-child(3) span:nth-child(2) {
-    background-color: black;
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-    margin-left: 10px;
-}
-
-td:nth-child(3) {
-    position: relative;
-}
-
-td:nth-child(3) span:nth-child(3) p.number-product-shopping {
-    width: 30px;
-    padding: 10px;
-    margin-left: 10px;
-    border-radius: 4px;
-    border: none;
-    border: 1px solid rgb(204, 199, 199);
-    position: relative;
-    top: 8px;
-}
-
-td:nth-child(3) span:nth-child(3) input:focus {
-    outline: none;
-}
-
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
-
-
-td:nth-child(3) .icons {
-    cursor: pointer;
-    position: relative;
-    top: 2px;
-}
-
-td:nth-child(3) .icons i {
-    background-color: #eee;
-    padding: 2px;
-}
-
-td div {
-    display: flex;
-    align-items: center;
-    align-items: center;
-}
-
-tr th:nth-child(4) {
-    display: flex;
-    justify-content: flex-end;
-}
-
-th:nth-child(4) span {
-    margin-left: 20px;
-}
-
-tr:nth-child(1) th:nth-child(1) {
-    width: 100px;
-}
-
-tr:nth-child(1) th:nth-child(2) {
-    width: 100px;
-}
-
-tr:nth-child(1) th:nth-child(3) {
-    width: 150px;
-}
-
-tr td p {
-    margin-bottom: 10px;
-}
-
-td img {
-    display: block;
-    margin-left: auto;
-    margin-right: 0;
-    width: 100px;
-    height: 110px;
-    position: relative;
-    top: -70px;
-    border-radius: 10px;
-}
-
-
 @media(min-width:320px) and (max-width:767px) {
-    tr td p{
-        font-size: 15px;
-        left: 10px;
+    .tabel{
+        width: 100%;
     }
-    .content-information-product .cardone {
-        width: 250px;
+   
+.content-information-product{
+    flex-direction: column;
+}
+
+    .flex_tabel{
+        flex-direction: column;
+        justify-content: center;
+    }
+   
+    .tabel .desc{
+      position: relative;
+      font-size: 15px;
+    }
+    .discount-month {
+        flex-direction: column;
+        width: 100%;
+    }
+    .information-product {
+        margin: auto;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+    .content-information-product .cardone,
+    .content-information-product .cardtwo 
+     {
+        width: 100%;
+        margin-top: 20px;
+        margin: auto;
+    }
+    
+}
+
+
+@media(min-width:767px) and (max-width:1200px) {
+    .postion img {
+        position: relative;
+        top: 35px;
+        width: 100%;
+        height: 100px;
+    }
+
+    .point {
+        display: none;
+    }
+
+    .content-information-product{
+        flex-direction: column;
+    }
+    .content-information-product .cardone,
+    .content-information-product .cardtwo 
+     {
+        width: 100%;
+        margin-top: 20px;
+        margin: auto;
+    }
+    .discount-month{
+        margin: auto;
+        text-align: center;
+    }
+
+}
+
+@media(min-width:1200px) and (max-width:1400px) {
+    .postion img {
         margin-top: 20px;
     }
-
-    .desc-discount {
-        width: 320px;
-        margin-bottom: 20px;
-    }
-
-    .input-discount {
-        margin-top: 30px;
-        width: 360px;
-    }
-
-    table {
-        width: 100px;
-    }
-
-    th {
-        border-bottom: none;
-        border-top: none;
-        background-color: #eee;
-    }
-
-    .head-img {
-        display: none;
-    }
-
-    .td-2 p {
-        border-bottom: none;
-    }
-
-    tr th {
-        width: 80px;
-        position: relative;
-        left: -40px;
-        height: 50px;
-        vertical-align: super;
-    }
-
-    tr td {
-        position: relative;
-        left: -70px;
-    }
-
-    .td-1 p {
-        position: relative;
-        border-bottom: none;
-        margin-left: 10px;
-    }
-
-    .td-1 {
-        position: relative;
-    }
-
-
-    td {
-        border-bottom: none;
-        border-right: none;
-    }
-
-    .postion img {
-        display: none;
-    }
-
-    .content-td .desc {
-        font-size: 10px;
-
-    }
-
 }
-

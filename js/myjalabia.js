@@ -8,7 +8,7 @@ function showProduct() {
     let content_myproduct = document.querySelector('.content-myproduct')
     content_myproduct.innerHTML = `
                 <div class="card-1">
-                    <img src="${fiendProduct.img}">
+                    <img src="${fiendProduct.img}" class="select"/>
                     <div class="content-product">
                         <h1>${fiendProduct.title}</h1>
                         <p>نقاط المكافأة:${fiendProduct.point}</p>

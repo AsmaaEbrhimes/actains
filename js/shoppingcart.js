@@ -9,51 +9,31 @@ let arry_shopping = [...shopping_jalabia, ...shopping_clothes, ...shopping_jambs
 
 const ShoppingProducts = () => {
     const tabel = document.querySelector('.tabel')
-    let map_shopping = arry_shopping.map((ele) => {
-        return `                   
-<tr>
-<td class="td-1">
-    <p>${ele.salary}S.R</p>
-</td>
-<td class='td-2'>
-    <p>${ele.salary}S.R</p>
-</td>
-
-<td class='td-3'>
-    <div>
-        <span class='delete' onclick='deletproductShopping(${ele.id})'>x</span>
-        <span onclick='UpdateQty(${ele.id})'><i class="fa-solid fa-rotate rotate"></i></span>
-        <span>
-        <p id="number-product-shopping-${ele.id}" class='number-product-shopping'>1</p>
+let map_shopping = arry_shopping.map((ele)=>{
+    return `
+    <div class="flex_tabel">
+    
+    <p class="desc">${ele.title}</p>
+    <div class="action_shopping">
+          <span class='delete' onclick='deletproductShopping(${ele.id})'>x</span>
+          <span>
+          <p id= number-product-shopping-${ele.id}" class='number-product-shopping'>1</p>
+         </span>
+          <span class="qty" onclick='UpdateQty(${ele.id})'><i class="fa-solid fa-rotate rotate"></i></span>
+        
+         <span class='icons'>
+         <i onclick='IncreseProductShopping(this)' data-productid="${ele.id}" class="fa-solid fa-angle-up"></i>
+        <i onclick='DecreseProductShopping(this)' data-productid="${ele.id}" class="fa-solid fa-angle-down"></i>
         </span>
-        <span class='icons'>
-            <i onclick='IncreseProductShopping(this)' data-productid="${ele.id}" class="fa-solid fa-angle-up"></i>
-            <i onclick='DecreseProductShopping(this)' data-productid="${ele.id}" class="fa-solid fa-angle-down"></i>
-        </span>
+        </div>
+        
+    <div><img class="img_shopping" src="${ele.img}" alt=""></div>
+  
     </div>
-</td>
-
-<td class="postion">
-    <span class="content-td">
-        <p class="desc">${ele.title}</p>
-        <p>نقاط المكافاءات${ele.point}</p>
-        <img src="${ele.img}" alt="">
-    </span>
-</td>
-</tr>
-`
-    })
-    let hheaderTabel = `
-<th>الاجمالي</th>
-<th>سعر الوحده</th>
-<th>الكميه</th>
-<th>
-    <span>الاسم</span>
-    <span class="head-img">الصورة</span>
-</th>
-</tr>
-`
-    tabel.innerHTML = hheaderTabel + "" + map_shopping.join('')
+    
+    `
+})
+ tabel.innerHTML = map_shopping.join('')
 }
 ShoppingProducts()
 

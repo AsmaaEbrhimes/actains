@@ -7,9 +7,13 @@ let content_cart = document.querySelector('.content-cart')
 function showProduct() {
     let content_myproduct = document.querySelector('.content-myproduct')
     content_myproduct.innerHTML = `
+    
                 <div class="card-1">
+                <div class="select_img">
                     <img onclick='select_src(this.src)' src="${fiendProduct['img-color-main']}">
                     <img onclick='select_src_second(this.src)' src="${fiendProduct['img-color-second']}" class='second'>
+                </div>
+
                     <div class="content-product">
                         <h1>${fiendProduct.title}</h1>
                         <p>نقاط المكافأة:${fiendProduct.point}</p>
@@ -28,6 +32,7 @@ function showProduct() {
                         <span class='sizeproduct'> ${fiendProduct["size-3"]}</span>
                         <span class='sizeproduct'> ${fiendProduct["size-4"]}</span>
                     </div>
+
                     <div class="product-dress">
                         <span onclick='Addtowishlist(${fiendProduct.id})'><i class="fa-regular fa-heart heart"></i></span>
                         <span class="shoppingbag"><button onclick='AddtoCartdress(${fiendProduct.id})'>اضافه للسله<i class="fa-solid fa-bag-shopping"></i></button></span>
@@ -45,19 +50,24 @@ function showProduct() {
                         </span>
                     </div>
                 </div>
+
+
                 <div class="card-2">
                     <div class="content">
-                        <p>الوان اخري</p>
+                        <p class="none">الوان اخري</p>
+                    <div class="img_product">
                         <div class="main">
-                            <img onclick='showOverlayImg(this.src)' src="${fiendProduct["img-color-main"]}" alt=""class='mains'>
+                        <img  onclick='showOverlayImg(this.src)' src="${fiendProduct["img-color-main"]}" alt=""class='mains'>
                         </div>
                         <div class="content-main">
                         <img onclick='changeimg(this.src)' src="${fiendProduct["img-color-main-one"]}" alt="" class='main-1'>
                         <img onclick='changeimg(this.src)' src="${fiendProduct["img-color-main-three"]}" alt=""class='main-2'>
                         <img onclick='changeimg(this.src)' src="${fiendProduct["img-color-main"]}" alt=""class='main-3'>
                         </div>
+                     </div>
                     </div>
                 </div>
+              
 `
 }
 
@@ -141,7 +151,7 @@ const showProductWishlist = () => {
          <h4>${ele.title}</h4>
         <img src="${ele.img}" alt="">
         </div>
-       <p> يجب عليك<a href="/"> تسجيل دخول</a> او <a href="/">انشاء حساب جديد</a> قبل البدء في اضافه المنتجات
+       <p> <span class="none">يجب عليك</span><a href="../html/login.html"> تسجيل دخول</a> <span class="none">او</span> <a href="../html/formregister.html">انشاء حساب جديد</a> <span>قبل البدء في اضافه المنتجات</span>
        <a href ='../html/favourite.html'>هل تريد الذهاب لسله الرغبات</a></p>
         </div>
         `

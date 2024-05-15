@@ -4,10 +4,11 @@ class HEADERCOMPONENTS extends HTMLElement {
         this.innerHTML = `
         <header>
         <div class="container">
-        <i class="fa-solid fa-bars bars"></i>
+        
             <div class="content-headre">
+            <i class="fa-solid fa-bars bars"></i>
                 <ul class="list-header">
-                    <a href="index.html"><h1>ACTAN</h1></a>
+                <a href="../index.html"><h1>ACTAN</h1></a>
                     <li class="li-shopping"><a href=""><i class="fa-solid fa-cart-shopping shopping"></i></a>
                     <span class='length'></span>
                         <div class="content-shopping">
